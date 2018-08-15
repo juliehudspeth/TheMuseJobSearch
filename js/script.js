@@ -25,11 +25,11 @@ $(document).ready(function () {
       var queryCompany = data.results[0].company.name;
  
     //Returns No result
-     if (data.results[0].length === 0) {
+     if (data.results[].length === 0) {
         $(".search-result").append("<li class='no-result'><p>Oops, no results!</p></li>");
       }
       //Iritating through arrays
-      for(var i = 0; i < data.results[0].length; i++) {
+      for(var i = 0; i < data.results[].length; i++) {
         $(".search-result").append("<li> <a href = " + queryLink[i] + " target='_blank'>" + queryName[i] + "</a> <p>" + queryCompany[i] + "</p> </li>");
       }
 
